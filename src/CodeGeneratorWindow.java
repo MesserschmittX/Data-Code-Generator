@@ -1,5 +1,3 @@
-package com.example;
-
 import javax.imageio.ImageIO;
 import javax.swing.*;
 import javax.swing.border.EmptyBorder;
@@ -43,7 +41,7 @@ public class CodeGeneratorWindow {
 	
 	private static JSplitPane horizontalSplitPane;
 
-	public static Preferences preferences = Preferences.userNodeForPackage(com.example.CodeGeneratorWindow.class);
+	public static Preferences preferences = Preferences.userNodeForPackage(CodeGeneratorWindow.class);
 	final static String CODE_FORMAT_KEY = "CODE_FORMAT_KEY";
 	final static String ERROR_CORRECTION_KEY = "ERROR_CORRECTION_KEY";
 	
@@ -180,7 +178,7 @@ public class CodeGeneratorWindow {
 		
 		
 		horizontalSplitPane = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT, dataCodeTabbedPane, dataCodeShowPanel);
-		horizontalSplitPane.setResizeWeight(0.3);
+		horizontalSplitPane.setResizeWeight(0.5);
 		
 		horizontalSplitPane.addPropertyChangeListener(JSplitPane.DIVIDER_LOCATION_PROPERTY, pce -> {
 			//int width = (int) (mainframe.getSize().getWidth() - horizontalSplitPane.getDividerLocation());
